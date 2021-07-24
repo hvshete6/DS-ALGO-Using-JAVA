@@ -24,9 +24,9 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        int[] a = { 1, 4, 3, 2, 6, 7 };
+        //int[] a = { 1, 4, 3, 2, 6, 7 };
+         int[] a = { 1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9 };
         int n = a.length;
-        // int[] a = { 1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9 };
         Solution sol = new Solution();
         System.out.print("Minimum Jumps Are:- " + sol.Solve(a, n));
     }
