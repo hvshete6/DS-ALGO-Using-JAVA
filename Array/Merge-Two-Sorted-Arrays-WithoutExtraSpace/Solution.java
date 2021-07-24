@@ -44,22 +44,22 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] a1 = { 10, 27, 38, 43, 82 };
-        int[] a2 = { 3, 9 };
+        int[] arr1 = { 10, 27, 38, 43, 82 };
+        int[] arr2 = { 3, 9 };
 
         // Function Call
-        merge(a1, a2, a1.length, a2.length);
+        merge(arr1, arr2, arr1.length, arr2.length);
 
         System.out.print("First Array: ");
-        for (int i = 0; i < a1.length; i++) {
-            System.out.print(a1[i] + " ");
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i] + " ");
         }
 
         System.out.println();
 
         System.out.print("Second Array: ");
-        for (int i = 0; i < a2.length; i++) {
-            System.out.print(a2[i] + " ");
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i] + " ");
         }
     }
 }
