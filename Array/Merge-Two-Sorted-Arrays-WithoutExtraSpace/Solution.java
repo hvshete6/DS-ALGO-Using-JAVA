@@ -44,8 +44,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] arr1 = { 10, 27, 38, 43, 82 };
-        int[] arr2 = { 3, 9 };
+        int[] arr1 = { 1, 3, 5, 7 };
+        int[] arr2 = { 0, 2, 6, 8, 9 };
 
         // Function Call
         merge(arr1, arr2, arr1.length, arr2.length);
