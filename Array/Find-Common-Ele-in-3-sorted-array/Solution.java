@@ -2,7 +2,7 @@
 class Solution {
     // This function prints common elements in ar1
     void findCommon(int ar1[], int ar2[], int ar3[]) {
-        // Initialize starting indexes for ar1[], ar2[] and ar3[]
+        
         int i = 0, j = 0, k = 0;
 
         // Iterate through three arrays while all arrays have elements
