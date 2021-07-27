@@ -22,18 +22,6 @@ class Solution {
         return res / 2;
     }
 
-            });
-        }
-        for (int ele : arr) {
-            if (2 * ele == k) {
-                res += Math.max(map.getOrDefault(ele, 0) - 1, 0);
-            } else {
-                res += map.getOrDefault(k - ele, 0);
-            }
-        }
-        return res / 2;
-    }
-
     public static void main(String[] args) {
         int[] arr = { 5, 4, 2, 2, 3 };
         int n = arr.length;
