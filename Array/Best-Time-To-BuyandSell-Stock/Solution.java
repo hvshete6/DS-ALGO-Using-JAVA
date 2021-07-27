@@ -1,3 +1,5 @@
+//Time Complexity is O(n)
+
 class Solution {
 
     public int maxProfit(int[] prices) {
