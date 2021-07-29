@@ -60,9 +60,9 @@ for (int i = 1; i < n-1; i ++)
         // Driver function to test the above function
         public static void main(String[] args)
         {
-            int arr[] = {1, 5, 8, 10};
+            int arr[] = {4,2,3,6};
             int n = arr.length;
-            int k = 2;
+            int k = 3;
             System.out.println("Maximum difference is "+
                                 getMinDiff(arr, n, k));
         }

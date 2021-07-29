@@ -44,15 +44,18 @@ class Solution {
 
         while(ele<n && right < size)
         {
-            if(visited[possibleHeights.get(right).getIndex()] == 0)
+            if(visited[possibleHeights.get(right).getIndex()] == 0) 
             {
                 ele++;
             }
-            visited[possibleHeights.get(right).getIndex()]++;
+            visited[possibleHeights.get(right).getIndex()]++; //increases the no. of times visited at that index
             right++;
         }
 
         int ans = possibleHeights.get(right-1).getValue() - possibleHeights.get(left).getValue();
+
+        //Sliding of window starts.
+        //shift the left pointer forward to slide the window.
 
         while(right<size)
         {
@@ -62,6 +65,8 @@ class Solution {
             }
             visited[possibleHeights.get(left).getIndex()]--;
             left    ++;
+
+            //the below condition will execute if ele<n.
 
             while(ele<n && right < size)
         {
@@ -82,8 +87,8 @@ class Solution {
 
     }
     public static void main(String[] args) {
-        int[] a = {1, 5, 8, 10};
-        int k=2;
+        int[] a = {4,2,3,6};
+        int k=3;
         int n=4;
         Solution sol = new Solution();
         System.out.print(sol.getMinDiff(a, n, k));
