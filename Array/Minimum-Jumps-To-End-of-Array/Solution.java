@@ -1,3 +1,4 @@
+Time Complexity is O(n)
 class Solution {
 
     int Solve(int[] arr, int n) {
