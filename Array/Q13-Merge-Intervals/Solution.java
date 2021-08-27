@@ -43,6 +43,18 @@ class Solution {
     }
 
     public static void main(String[] args) {
+        int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
+        Solution sol = new Solution();
+
+        int[][] merge = sol.merge(intervals);
+
+        for (int i = 0; i < merge.length; i++) {
+            // Loop through all elements of current row
+            for (int j = 0; j < merge[i].length; j++) {
+
+                System.out.print(merge[i][j] + " ");
+            }
+        }
 
     }
 }
